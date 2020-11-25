@@ -114,6 +114,7 @@ alias ubs3="ssh nick@ubs2004-lab300"
 alias ll="ls -alF"
 alias c="clear"
 alias up="sh /home/nick/Documents/dotfiles/linux-dotfiles/up.sh"
+alias ld="cd /home/nick/Documents/git/dotfiles/linux-dotfiles"
 
 function lazygit() {
     git add .
