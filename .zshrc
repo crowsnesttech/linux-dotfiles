@@ -100,7 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #Example aliases
-alias zshconfig="nano ~/.zshrc"
+alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="nano ~/.oh-my-zsh"
 alias syno="ssh nick@cnt-synology -p 3390"
 alias df="sh ~/Documents/Bash/dellfan.sh"
@@ -114,3 +114,9 @@ alias ubs3="ssh nick@ubs2004-lab300"
 alias ll="ls -alF"
 alias c="clear"
 alias up="sh /home/nick/Documents/dotfiles/linux-dotfiles/up.sh"
+
+function lazygit() {
+    git add .
+    git commit -a -m "$1"
+    git push
+}
