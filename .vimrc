@@ -3,3 +3,4 @@ syntax on
 set number
 set ignorecase
 set showmatch
+set laststatus=2

@@ -117,6 +117,6 @@ alias up="sh /home/nick/Documents/dotfiles/linux-dotfiles/up.sh"
 
 function lazygit() {
     git add .
-    git commit -a -m "$1"
+    git commit -a -m $*
     git push
 }
