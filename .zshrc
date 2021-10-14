@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/nick/.oh-my-zsh"
+export ZSH="/home/$USER/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -102,19 +102,19 @@ source $ZSH/oh-my-zsh.sh
 #Example aliases
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="nano ~/.oh-my-zsh"
-alias syno="ssh nick@cnt-synology -p 3390"
+alias syno="ssh $USER@cnt-synology.crowsnest.home -p 3390"
 alias df="sh ~/Documents/Bash/dellfan.sh"
 alias do="sh ~/Documents/Bash/dellon.sh"
-alias ubs="ssh nick@ubs1804-syno"
-alias ubsp="ssh nick@ubs1804-prod"
+alias ubs="ssh $USER@ubs1804-syno.crowsnest.home"
+alias ubsp="ssh $USER@ubs1804-prod"
 alias unr="ssh root@cnt-unraid"
 alias vpn="ssh dietpi@dietpi"
-alias pve="ssh nick@cnt-backup"
-alias ubs3="ssh nick@ubs2004-lab300.crowsnest.home"
+alias pve="ssh $USER@cnt-backup"
+alias ubs3="ssh $USER@ubs2004-lab300.crowsnest.home"
 alias ll="ls -alF"
 alias c="clear"
-alias up="sh /home/nick/Documents/dotfiles/linux-dotfiles/up.sh"
-alias ld="cd /home/nick/Documents/git/dotfiles/linux-dotfiles"
+alias up="sh /home/$USER/Documents/dotfiles/linux-dotfiles/up.sh"
+alias ld="cd /home/$USER/Documents/git/dotfiles/linux-dotfiles"
 
 function lazygit() {
     git add .
