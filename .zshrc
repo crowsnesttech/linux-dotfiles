@@ -100,16 +100,23 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #Example aliases
-alias zshconfig="vim ~/.zshrc"
-alias ohmyzsh="nano ~/.oh-my-zsh"
-alias syno="ssh $USER@cnt-synology.crowsnest.home -p 3390"
-alias ubs="ssh $USER@ubs1804-syno.crowsnest.home"
-alias pve="ssh $USER@cnt-backup"
-alias dellfan="sh ~/Documents/git/scripts/dellfan3.sh"
-alias do="sh ~/Documents/git/scripts/dellon.sh"
+#
+alias ohmyzsh="vim ~/.oh-my-zsh"
+alias zshconfig="nano ~/.zshrc"
+# SSH Aliases:
+alias syno="ssh $USER@cnt-synology -p 3390"
+alias ubs="ssh $USER@ubs1804-syno"
+alias xpe="ssh $USER@cnt-backup"
+alias vcsa="ssh -o PubkeyAuthentication=no root@192.168.11.18"
+# Bash Shortcuts
 alias ll="ls -alF"
 alias c="clear"
 alias ld="cd /home/$USER/Documents/git/dotfiles/linux-dotfiles"
+# Scripts
+alias dellon="sh ~/Documents/git/scripts/dellon.sh"
+alias dellfan="sh ~/Documents/git/scripts/dellfan3.sh"
+alias delloff="sh ~/Documents/git/scripts/delloff.sh"
+
 
 function lazygit() {
     git add .
