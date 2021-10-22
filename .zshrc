@@ -1,4 +1,4 @@
-# If you come from bash you might have to change your $PATH.
+# If you come from git/scripts you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
@@ -103,8 +103,8 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="nano ~/.oh-my-zsh"
 alias syno="ssh $USER@cnt-synology.crowsnest.home -p 3390"
-alias df="sh ~/Documents/Bash/dellfan.sh"
-alias do="sh ~/Documents/Bash/dellon.sh"
+alias dellfan="sh ~/Documents/git/scripts/dellfan3.sh"
+alias do="sh ~/Documents/git/scripts/dellon.sh"
 alias ubs="ssh $USER@ubs1804-syno.crowsnest.home"
 alias pve="ssh $USER@cnt-backup"
 alias ll="ls -alF"
