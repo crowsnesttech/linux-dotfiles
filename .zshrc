@@ -111,13 +111,13 @@ alias vcsa="ssh -o PubkeyAuthentication=no root@192.168.11.18"
 # Bash Shortcuts
 alias ll="ls -alF"
 alias c="clear"
-alias ld="cd $USER/Documents/git/dotfiles/linux-dotfiles"
-alias scpt="cd $USER/Documents/git/scripts"
+alias ld="cd $HOME/Documents/git/dotfiles/linux-dotfiles"
+alias scpt="cd $HOME/Documents/git/scripts"
 # Scripts
 alias dellon="sh ~/Documents/git/scripts/dellon.sh"
 alias dellfan="sh ~/Documents/git/scripts/dellfan3.sh"
 alias delloff="sh ~/Documents/git/scripts/delloff.sh"
-
+alias wgd="ip link show | grep wlp | awk '{print $2}'"
 
 function lazygit() {
     git add .
