@@ -103,6 +103,7 @@ source $ZSH/oh-my-zsh.sh
 #
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias zshconfig="nano ~/.zshrc"
+alias zshrestart="exec zsh"
 # SSH Aliases:
 alias syno="ssh $USER@cnt-synology -p 3390"
 alias ubs="ssh $USER@ubs1804-syno"
@@ -117,7 +118,7 @@ alias scpt="cd $HOME/Documents/git/scripts"
 alias dellon="sh ~/Documents/git/scripts/dellon.sh"
 alias dellfan="sh ~/Documents/git/scripts/dellfan3.sh"
 alias delloff="sh ~/Documents/git/scripts/delloff.sh"
-alias wgd="ip link show | grep wlp | awk '{print $2}'"
+alias wgd="sh ~/Documents/git/scripts/wgdown.sh"
 
 function lazygit() {
     git add .
