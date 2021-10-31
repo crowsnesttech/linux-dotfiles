@@ -8,7 +8,7 @@ export ZSH="/home/$USER/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="agnostercstm"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -102,25 +102,30 @@ source $ZSH/oh-my-zsh.sh
 #Aliases
 #
 alias ohmyzsh="vim ~/.oh-my-zsh"
-alias zshconfig="nano ~/.zshrc"
+alias zshconfig="vim ~/.zshrc"
 alias zshrestart="exec zsh"
 # SSH Aliases:
 alias syno="ssh $USER@cnt-synology -p 3390"
 alias ubs="ssh $USER@ubs1804-syno"
 alias xpe="ssh $USER@cnt-backup"
+alias esxi1="ssh $USER@192.168.11.15"
+alias esxi2="ssh $USER@192.168.11.16"
+alias esxi3="ssh $USER@192.168.11.17"
 alias vcsa="ssh -o PubkeyAuthentication=no root@192.168.11.18"
 # Bash Shortcuts
 alias ll="ls -alF"
 alias c="clear"
 alias ld="cd $HOME/Documents/git/dotfiles/linux-dotfiles"
 alias scpt="cd $HOME/Documents/git/scripts"
+alias ans="cd $HOME/Documemts/git/ansible"
 # Scripts
 alias dellon="sh ~/Documents/git/scripts/dellon.sh"
 alias dellfan="sh ~/Documents/git/scripts/dellfan3.sh"
 alias delloff="sh ~/Documents/git/scripts/delloff.sh"
+alias hp="sh ~/Documents/git/scripts/servers/hpon.sh"
 alias wgd="sh ~/Documents/git/scripts/wgdown.sh"
 
-function lazygit() {
+function lgt() {
     git add .
     git commit -a -m $*
     git push
