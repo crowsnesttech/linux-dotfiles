@@ -102,9 +102,10 @@ source $ZSH/oh-my-zsh.sh
 #Aliases
 #
 alias ohmyzsh="vim ~/.oh-my-zsh"
-alias zshconfig="vim ~/.zshrc"
-alias zshrestart="exec zsh"
+alias zshc="vim ~/.zshrc"
+alias zshr="exec zsh"
 # SSH Aliases:
+alias cmd="ssh $USER@ubs-cmdctl"
 alias syno="ssh $USER@cnt-synology -p 3390"
 alias ubs="ssh $USER@ubs1804-syno"
 alias xpe="ssh $USER@cnt-backup"
