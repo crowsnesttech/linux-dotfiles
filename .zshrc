@@ -126,6 +126,8 @@ alias delloff="sh ~/Documents/git/scripts/delloff.sh"
 alias hp="sh ~/Documents/git/scripts/servers/hpon.sh"
 alias wgd="sh ~/Documents/git/scripts/wgdown.sh"
 
+export PATH=~/bin:/home/nick/.local/bin:$PATH
+
 function lgt() {
     git add .
     git commit -a -m $*
