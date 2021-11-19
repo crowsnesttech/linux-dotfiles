@@ -9,7 +9,7 @@ clean=false
 extension="otf"
 patches=("Complete")
 compat=()
-installpath="user"
+installpath="system"
 
 # Usage info
 usage() {
