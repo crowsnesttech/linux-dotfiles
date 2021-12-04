@@ -119,6 +119,7 @@ alias c="clear"
 alias ld="cd $HOME/Documents/git/dotfiles/linux-dotfiles"
 alias scpt="cd $HOME/Documents/git/scripts"
 alias ans="cd $HOME/Documemts/git/ansible"
+alias dns="sudo systemd-resolve --flush-caches"
 # Scripts
 alias dellon="sh ~/Documents/git/scripts/dellon.sh"
 alias dellfan="sh ~/Documents/git/scripts/dellfan3.sh"
