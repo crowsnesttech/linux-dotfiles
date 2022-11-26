@@ -113,10 +113,10 @@ alias cmd="ssh $USER@ubs-cmdctl"
 alias syno="ssh $USER@cnt-synology -p 3390"
 alias ubs="ssh $USER@ubs1804-syno"
 alias xpe="ssh $USER@cnt-backup"
-alias esxi1="ssh $USER@192.168.11.15"
-alias esxi2="ssh $USER@192.168.11.16"
-alias esxi3="ssh $USER@192.168.11.17"
-alias vcsa="ssh -o PubkeyAuthentication=no root@192.168.11.18"
+alias hp1="ssh root@172.16.16.2"
+alias hp2="ssh root@172.16.16.3"
+alias hp3="ssh root@172.16.16.4"
+alias pbs="ssh root@172.16.16.5"
 # Bash Shortcuts
 alias ll="ls -alF"
 alias c="clear"
@@ -125,11 +125,7 @@ alias scpt="cd $HOME/git/scripts"
 alias ans="cd $HOME/git/ansible"
 alias dns="sudo systemd-resolve --flush-caches"
 # Scripts
-alias dellon="sh $HOME/git/scripts/dellon.sh"
-alias dellfan="sh $HOME/git/scripts/dellfan3.sh"
-alias delloff="sh $HOME/git/scripts/delloff.sh"
-alias hp="sh $HOME/git/scripts/servers/hpon.sh"
-alias wgd="sh $HOME/git/scripts/wgdown.sh"
+
 
 export PATH=~/bin:/home/nick/.local/bin:$PATH
 
